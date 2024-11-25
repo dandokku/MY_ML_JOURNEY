@@ -18,4 +18,11 @@ for language in languages:
         continue
     else:
         print(language)
-    
+
+
+#* PASS Statement - used when there's no statement to be passed after a condition has being met.
+number = 5.5
+
+if number > 0.0:
+    pass
+    # add something to do later 
