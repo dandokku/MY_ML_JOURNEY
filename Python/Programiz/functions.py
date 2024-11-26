@@ -111,3 +111,43 @@ def multiply_numbers(n1, n2):
 
 print(add_numbers(2, 5))
 print(multiply_numbers(5, 6))
+
+
+#* POSITIONAL, KEYWORD & DEFAULT ARGUMENTS
+# POSITIONAL ARGUMENT
+def add_numbers2(n1, n2):
+    result = n1 + n2
+    return result
+
+#add_numbers2(2) #! this will give an error because you have to pass in two arguments
+
+# KEYWORD ARGUMENT
+'''
+you can also send arguments with the key = value, the order of the arguments does not matter
+'''
+
+def greet(name, message):
+    print("Hello", name)
+    print(message)
+
+greet("Jack", "What is going on?")
+greet(message = "Hafa?", name = "Jill")
+
+# ! You can give parameters names, that becomes a keyword argument
+
+# DEFAULT ARGUMENT
+def add_numbers3(n1 = 100, n2 = 200): #! all parameters must have the same type
+    result = n1 + n2
+    return result
+
+result = add_numbers3(20) #! what happens here when you only add one parameter, the machine will read it as the first parameter, thus your result will be it being added to the second parameter, hence 220
+print(result)
+# ? tho if you don't pass in any parameter, it'll just add the default values of n1 and n2 together
+
+
+'''
+SUMMARY:
+- The arguments that are passed based on their position are known as positional arguments.
+- If we give names to arguments, they are keyword arguments. The order of argument doesn't matter for keyword arguments.
+- We can also provide default values to arguments. These default values are used if we do not pass arguments during a function call.
+'''
