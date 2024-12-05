@@ -28,3 +28,4 @@ print(list(range(1, 11, 2))) # [1, 3, 5, 7, 9]
 
 # EXercise
 print(list(range(3, 31, 3)))
+
