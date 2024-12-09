@@ -1,5 +1,4 @@
 '''
-
 - Difference between return and print: print just displays on the screen for the human user, it does not really have any computational value. But return stores the value, usually a function is supposed to return a value, if you use print--it'll return null as the value. when working with functions, return is a better statement to use.
 
 
@@ -20,6 +19,8 @@ def greeting(age):
     age = age + 5
     return age
 
+
+- the self parameter in classes/methods
 
 
 '''
