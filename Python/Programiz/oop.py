@@ -88,3 +88,26 @@ circle2 = Circle.from_diameter(10)
 print(circle2.area())  # Calls the instance method on a new instance
 
 #! So basically the instance method is more specific. i dig i dig
+
+
+# Everything in python is a object
+
+numbes = [1, 3, 4, 5]
+print(type(numbes))
+
+n1 = 5
+print(type(n1))
+# as you can see, they are all objects
+
+
+#? dir(), You can list out all the attributes and methods of a given object by using the dir() function
+print(dir(numbes)) #crazy shit mann
+
+# welp = numbers.__add__([3, 4, 6])
+# print(welp)
+
+
+#? id(), every object has an id for identity. The id of an object is always unique and constant for this object during its lifetime
+print(id(numbes)) 
+print(id(n1)) 
+# The id differs everytime, why?
